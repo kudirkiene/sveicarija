@@ -1,0 +1,66 @@
+@font-face {
+    font-family: DorothyValentine;
+    src: url(../font/DorothyValentine-MVanp.ttf);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: black;
+    color: whitesmoke;
+    overflow-x: hidden;
+}
+
+h1 {
+    font-family: DorothyValentine;
+    font-size: 8vw;
+    text-align: center;
+    padding: 20px;
+}
+
+footer {
+    font-family: DorothyValentine;
+    font-size: 24px;
+    text-align: center;
+    background-color: black;
+    padding: 50px 20px;
+}
+
+ul {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    background-color: black;
+}
+
+li {
+    height: 30vh;
+    flex-grow: 1;
+}
+
+li:hover {
+    z-index: 1;
+}
+
+li:last-child {
+    flex-grow: 0;
+}
+
+img {
+    max-height: 100%;
+    min-width: 100%;
+    object-fit: cover;
+    filter: grayscale(100%) brightness(75%);
+    transition: all 0.2s;    
+}
+
+img:hover {
+    filter: grayscale(0%) brightness(100%);
+    transform: scale(1.1);
+    box-shadow: 0 0 50px 10px black;
+}
